@@ -1,9 +1,10 @@
-import { CalculadoraModule } from './calculadora';
+import { CalculadoraModule, CalculadoraService } from './calculadora';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     CalculadoraModule
   ],
-  providers: [],
+  providers: [CalculadoraService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
